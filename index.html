@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Water Modal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Add water</h2>
+          <span
+            class="close"
+            onclick="document.getElementById('modal').style.display='none'"
+            >&times;</span
+          >
+        </div>
+        <div class="modal-body">
+          <h4 class="label-distance" for="amount">Choose a value:</h4>
+          <label class="label-distance-text" for="amount"
+            >Amount of water:</label
+          >
+          <div class="amount-selector">
+            <button onclick="changeAmount(-10)">-</button>
+            <span id="amount">0ml</span>
+            <button onclick="changeAmount(10)">+</button>
+          </div>
+          <label class="label-distance" for="time">Recording time:</label>
+          <input class="input-text" type="text" id="time" value="7:00" />
+          <h4 class="label-distance" for="value">
+            Enter the value of the water used:
+          </h4>
+          <input class="input-text" type="number" id="value" value="50" />
+          <div class="input-save-container">
+            <input type="text" id="autoFillInput" readonly value="0ml" />
+            <button class="save-button">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
