@@ -14,8 +14,8 @@ function changeAmount(delta) {
     let newAmount = currentAmount + delta;
     if (newAmount >= 0) {
         amountElement.textContent = newAmount + 'ml';
-        document.getElementById('autoFillInput').value = newAmount + 'ml'; // Автоматически заполняем input
-        document.getElementById('value').value = newAmount; // Синхронизируем значение с полем ввода
+        document.getElementById('autoFillInput').value = newAmount + 'ml'; 
+        document.getElementById('value').value = newAmount; 
     }
 }
 
