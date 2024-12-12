@@ -126,6 +126,8 @@ body {
 
 .amount-selector button:hover {
     background-color: #0056b3;
+    color: white;
+    
 }
 
 .amount-selector span {
